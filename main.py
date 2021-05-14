@@ -198,31 +198,31 @@ def achivements():
     if user.score >= 0.0001 and not ach2.earned or ach1.earned and not ach2.earned:
         ach1.earned = True
         ach1.draw()
-    if user.score >= 0.0002 and not ach3.earned or ach2.earned and not ach3.earned:
+    if user.score >= 0.001 and not ach3.earned or ach2.earned and not ach3.earned:
         ach2.earned = True
         ach2.draw()
-    if user.score >= 0.0003 and not ach4.earned or ach3.earned and not ach4.earned:
+    if user.score >= 0.003 and not ach4.earned or ach3.earned and not ach4.earned:
         ach3.earned = True
         ach3.draw()
-    if user.score >= 0.0004 and not ach5.earned or ach4.earned and not ach5.earned:
+    if user.score >= 0.01 and not ach5.earned or ach4.earned and not ach5.earned:
         ach4.earned = True
         ach4.draw()
-    if user.score >= 0.0005 and not ach6.earned or ach5.earned and not ach6.earned:
+    if user.score >= 0.05 and not ach6.earned or ach5.earned and not ach6.earned:
         ach5.earned = True
         ach5.draw()
-    if user.score >= 0.0006 and not ach7.earned or ach6.earned and not ach7.earned:
+    if user.score >= 0.09 and not ach7.earned or ach6.earned and not ach7.earned:
         ach6.earned = True
         ach6.draw()
-    if user.score >= 0.0007 and not ach8.earned or ach7.earned and not ach8.earned:
+    if user.score >= 0.1 and not ach8.earned or ach7.earned and not ach8.earned:
         ach7.earned = True
         ach7.draw()
-    if user.score >= 0.0008 and not ach9.earned or ach8.earned and not ach9.earned:
+    if user.score >= 0.5 and not ach9.earned or ach8.earned and not ach9.earned:
         ach8.earned = True
         ach8.draw()
-    if user.score >= 0.0009 and not ach10.earned or ach9.earned and not ach10.earned:
+    if user.score >= 0.9 and not ach10.earned or ach9.earned and not ach10.earned:
         ach9.earned = True
         ach9.draw()
-    if user.score >= 0.001 or ach10.earned:
+    if user.score >= 1.0001 or ach10.earned:
         ach10.earned = True
         ach10.draw()
 
@@ -240,23 +240,23 @@ click_power = makeSmall(1)
 click_power_multiply = 1.25
 upgrade_y = 10
 upgrade_1 = UpgradeButtons('Сила клика', 792, upgrade_y, button_img, makeSmall(20), 2.8, 0)
-upgrade_2 = UpgradeButtons('Сила клика2', 792, upgrade_y + 110 * 1, button_img, makeSmall(15), 1.15, makeSmall(0.1))
-upgrade_3 = UpgradeButtons('Сила клика3', 792, upgrade_y + 110 * 2, button_img, makeSmall(100), 1.15, makeSmall(0.5))
-upgrade_4 = UpgradeButtons('Сила клика4', 792, upgrade_y + 110 * 3, button_img, makeSmall(500), 1.15, makeSmall(4))
-upgrade_5 = UpgradeButtons('Сила клика5', 792, upgrade_y + 110 * 4, button_img, makeSmall(3000), 1.15, makeSmall(10))
-upgrade_6 = UpgradeButtons('Сила клика6', 792, upgrade_y + 110 * 5, button_img, makeSmall(10000), 1.15, makeSmall(40))
+upgrade_2 = UpgradeButtons('Купить MX150', 792, upgrade_y + 110 * 1, button_img, makeSmall(15), 1.15, makeSmall(0.1))
+upgrade_3 = UpgradeButtons('Купить ASUS TUF-RTX3090-24G-GAMING', 792, upgrade_y + 110 * 2, button_img, makeSmall(100), 1.15, makeSmall(0.5))
+upgrade_4 = UpgradeButtons('Поставить майнеры во всей школе', 792, upgrade_y + 110 * 3, button_img, makeSmall(500), 1.15, makeSmall(4))
+upgrade_5 = UpgradeButtons('Поставить майнеры по всему институту', 792, upgrade_y + 110 * 4, button_img, makeSmall(3000), 1.15, makeSmall(10))
+upgrade_6 = UpgradeButtons('Захват мощьностей правительственного супер компьютера', 792, upgrade_y + 110 * 5, button_img, makeSmall(10000), 1.15, makeSmall(40))
 saveButton = SaveButton('SAVE', 20, 600, button_img)
 loadButton = SaveButton('LOAD', 200, 600, button_img)
-ach1 = achivementAlarm('Ачива 1', 450, 600, achivement_img)
-ach2 = achivementAlarm('Ачива 2', 450, 600, achivement_img)
-ach3 = achivementAlarm('Ачива 3', 450, 600, achivement_img)
-ach4 = achivementAlarm('Ачива 4', 450, 600, achivement_img)
-ach5 = achivementAlarm('Ачива 5', 450, 600, achivement_img)
-ach6 = achivementAlarm('Ачива 6', 450, 600, achivement_img)
-ach7 = achivementAlarm('Ачива 7', 450, 600, achivement_img)
-ach8 = achivementAlarm('Ачива 8', 450, 600, achivement_img)
-ach9 = achivementAlarm('Ачива 9', 450, 600, achivement_img)
-ach10 = achivementAlarm('Ачива 10', 450, 600, achivement_img)
+ach1 = achivementAlarm('Его первые клики', 450, 600, achivement_img)
+ach2 = achivementAlarm('Оно развивается', 450, 600, achivement_img)
+ach3 = achivementAlarm('Не останавливайся', 450, 600, achivement_img)
+ach4 = achivementAlarm('Тик-так денюшка кап-кап', 450, 600, achivement_img)
+ach5 = achivementAlarm('Курлык-Курлык', 450, 600, achivement_img)
+ach6 = achivementAlarm('Братишка я биткоин принёс', 450, 600, achivement_img)
+ach7 = achivementAlarm('Ух… Мерзопакостная тварь. Даже не знаю, что сказать', 450, 600, achivement_img)
+ach8 = achivementAlarm('Остынь и приляг. Желательно на рельсы', 450, 600, achivement_img)
+ach9 = achivementAlarm('Ещё чуть-чуть', 450, 600, achivement_img)
+ach10 = achivementAlarm('Первый биткоин', 450, 600, achivement_img)
 
 upgrades_list = [upgrade_1, upgrade_2, upgrade_3, upgrade_4, upgrade_5, upgrade_6]
 
